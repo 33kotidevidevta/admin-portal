@@ -4,7 +4,7 @@ import "./Activities.css";
 import Activity from "./Activity";
 import {ToastContainer, toast} from "react-toastify";
 
-const URL = `https://gaushala-backend.onrender.com`;
+const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 const Activities = () => {
   const [formData, setFormData] = useState({

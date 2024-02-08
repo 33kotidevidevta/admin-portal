@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./Gallery.css";
-const URL = `https://gaushala-backend.onrender.com`;
+const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 const GalleryImage = ({ image, setChangeInData }) => {
   console.log(image);

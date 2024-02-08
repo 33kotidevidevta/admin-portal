@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./Activities.css";
-const URL = `https://gaushala-backend.onrender.com`;
+const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 const Activity = ({ blog, setChangeInActivity }) => {
 //   console.log(blog);

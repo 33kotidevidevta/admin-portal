@@ -4,7 +4,7 @@ import axios from 'axios';
 import GalleryImage from "./GalleryImage";
 import {ToastContainer, toast} from "react-toastify";
 
-const URL = `https://gaushala-backend.onrender.com`;
+const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 const Gallery = () => {
   const [formData, setFormData] = useState({
