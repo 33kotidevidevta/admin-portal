@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import "./Activities.css";
-const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 const Activity = ({ blog, setChangeInActivity }) => {
 //   console.log(blog);
@@ -11,7 +10,7 @@ const Activity = ({ blog, setChangeInActivity }) => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.delete(
-        `${URL}/activity/delete?id=${id}`,
+        `${process.env.REACT_APP_BACKEND_URL}/activity/delete?id=${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -9,7 +9,6 @@ import axios from "axios";
 import NavBar from "./components/NavBar/NavBar";
 import SideNavBar from "./components/NavBar/prev-SideNavBar/SideNavbar.js";
 
-const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 function App() {
   const [sideNavBarExpanded, setSideNavBarExpanded] = useState(false);
@@ -32,7 +31,7 @@ function App() {
           return;
         }
         console.log(storedToken);
-        const response = await axios.get(`${URL}/verify/token`, {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/verify/token`, {
           headers: {
             Authorization: `Bearer ${storedToken}`,
           },

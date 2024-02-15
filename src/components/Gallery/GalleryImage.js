@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import "./Gallery.css";
-const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 const GalleryImage = ({ image, setChangeInData }) => {
   console.log(image);
@@ -10,7 +9,7 @@ const GalleryImage = ({ image, setChangeInData }) => {
   const handleDelete = async () => {
     try {
         const token = localStorage.getItem("token");
-      const response = await axios.delete(`${URL}/gallery/delete?id=${id}`, {
+      const response = await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/gallery/delete?id=${id}`, {
         headers:{
             Authorization:`Bearer ${token}`,
         }

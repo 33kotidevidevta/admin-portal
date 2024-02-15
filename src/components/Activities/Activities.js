@@ -4,7 +4,6 @@ import "./Activities.css";
 import Activity from "./Activity";
 import {ToastContainer, toast} from "react-toastify";
 
-const URL = `https://three3kotidevidevta-backend.onrender.com`;
 
 const Activities = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +19,7 @@ const Activities = () => {
   useEffect(()=>{
     const getBlogData = async()=>{
         try{
-            const response = await axios.get(`${URL}/activity/show/all`);
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/activity/show/all`);
             if(response.status === 200 && (response.data.message === "Fetch All blogs")){
                 // console.log(response);
                 setBlogData(response.data.blogs);
