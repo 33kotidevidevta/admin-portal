@@ -10,7 +10,7 @@ const Gallery = () => {
   });
   const [imageData, setImageData] = useState([]);
   const [changeInData, setChangeInData] = useState(false);
-
+  const UseLessVariable = "This is UseLessVariable";
   useEffect(()=>{
     const getImageData = async()=>{
       try{
